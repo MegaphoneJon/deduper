@@ -446,7 +446,8 @@ function deduper_civicrm_container($container) {
       'name' => 'dedupe_pairs',
       'withArray' => 'fast',
     ]]
-  ))->setFactory('CRM_Utils_Cache::create');
+  ))->setFactory('CRM_Utils_Cache::create')
+    ->setPublic(TRUE);
 }
 
 /**
